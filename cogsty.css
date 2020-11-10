@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    min-height: 100%;
+    position:relative;
+    margin:0;
+  }
+
+header::before{
+
+    background-image: url("cbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: absolute;
+    content: " ";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .5;
+}
+#im1{
+
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+    margin-left: 3px;
+    border-radius: 15px;
+}
+
+#ul{
+    display: flex;
+    margin: auto;
+}
+
+ul li a{
+    margin: 14px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+}
+ul li a:hover{
+
+    color: rebeccapurple;
+}
+
+.gf{
+    list-style: none;
+    padding: 17px 10px;
+}
+.carousel-item img{
+    padding: 10px 85px;
+    height: 550px;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.carousel-item img{
+
+    border-radius: 220px;
+}
+
+h2{
+    text-align: center;
+    margin: 25px 1px;
+}
+
+.moto{
+
+    text-align: center;
+    margin: 20px 1px;
+    padding: 15px 2px;
+}
+
+#parag{
+
+    padding: 15px;
+
+}
+
+@media only screen and (max-width: 1012px){
+
+    #ul{
+
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+}
+
+.carousel-control-prev-icon{
+
+    height: 80px;
+    width: 70px;
+    background-color: black;
+
+}
+
+.carousel-control-next-icon{
+
+    height: 80px;
+    width: 70px;
+    background-color: black;
+
+}
+@media only screen and (max-width: 622px){
+
+    .carousel-item img{
+
+        height: 300px;
+        width: 100%;
+    }
+
+}
